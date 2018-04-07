@@ -14,7 +14,7 @@
 			session_start();
 			$_SESSION['user']=$user;
 			$nowusers=mysql_fetch_array($result);
-			echo "<script>alert('登录成功！');location.href='login.html';</script>";
+			echo "<script>alert('登录成功！');location.href='add.html';</script>";
 		}
 		else
 			echo "<script>alert('用户名或密码不正确！');history.back(-1);</script>";

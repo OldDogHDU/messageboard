@@ -1,4 +1,4 @@
-zz<?php
+<?php
 	$user=$_POST["user"];
 	$pwd=$_POST["pwd"];
 	if($user==""||$pwd=="")
@@ -16,7 +16,7 @@ zz<?php
 			$insert="insert into userinfo (user,pwd) values ('$user','$pwd')";
 			$result_insert=mysql_query($insert);
 			if($result_insert)
-				echo "<script>alert('注册成功！');history.go(-2);</script>";
+				echo "<script>alert('注册成功！');location.href='login.html';</script>";
 		}
 	}	
 ?>
